@@ -1,0 +1,25 @@
+{
+  "name": "my-first-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tree-sapii/my-first-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tree-sapii/my-first-action/issues"
+  },
+  "homepage": "https://github.com/tree-sapii/my-first-action#readme",
+  "dependencies": {
+    "@actions/core": "^3.0.0",
+    "@actions/github": "^9.0.0",
+    "@azure-rest/ai-inference": "^1.0.0-beta.6"
+  }
+}

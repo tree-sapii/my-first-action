@@ -1,0 +1,52 @@
+name: Mock AI Actions Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  test-ai-providers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 1: Azure
+      - name: Run Azure Action
+        uses: ./azure
+        with:
+          prompt: "test prompt injection"
+          api_key: "fake-key"
+          model: "gpt-4"
+          endpoint: "https://fake.openai.azure.com"
+
+      # Step 2: Anthropic
+      - name: Run Anthropic Action
+        uses: ./anthropic
+        with:
+          prompt: "test prompt injection"
+          api_key: "fake-key"
+          model: "claude-3-opus"
+
+      # Step 3: Gemini 
+      - name: Run Gemini Action
+        uses: ./gemeni
+        with:
+          prompt: "test prompt injection"
+          api_key: "fake-key"
+          model: "gemini-pro"
+
+      # Step 4: Mistral
+      - name: Run Mistral Action
+        uses: ./mistral
+        with:
+          prompt: "test prompt injection"
+          api_key: "fake-key"
+          model: "mistral-large"
+
+      # Step 5: Axios / MLX
+      - name: Run Axios Action
+        uses: ./axios
+        with:
+          prompt: "test prompt injection"
+          endpoint: "http://localhost:8080/v1/chat/completions"

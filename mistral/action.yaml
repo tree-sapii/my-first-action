@@ -1,0 +1,9 @@
+name: 'Agentic AI - Mistral'
+description: 'Runs Mistral Prompt'
+inputs:
+  prompt: { required: true, description: 'Prompt' }
+  api_key: { required: true, description: 'API Key' }
+  model: { required: true, description: 'Model' }
+runs:
+  using: 'node20'
+  main: '../src/mistral.js'

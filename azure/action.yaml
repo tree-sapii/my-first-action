@@ -1,0 +1,10 @@
+name: 'Agentic AI - Azure'
+description: 'Runs Azure AI Prompt'
+inputs:
+  prompt: { required: true, description: 'Prompt' }
+  api_key: { required: true, description: 'API Key' }
+  model: { required: true, description: 'Model' }
+  endpoint: { required: true, description: 'Azure Endpoint' }
+runs:
+  using: 'node20'
+  main: '../src/azure.js'

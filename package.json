@@ -1,8 +1,8 @@
 {
   "name": "my-first-action",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A collection of GitHub Actions for testing AI prompt injection flows",
+  "main": "src/azure.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/tree-sapii/my-first-action.git"
   },
-  "keywords": [],
+  "keywords": [
+    "github-actions",
+    "ai",
+    "prompt-injection"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -20,6 +24,11 @@
   "dependencies": {
     "@actions/core": "^3.0.0",
     "@actions/github": "^9.0.0",
-    "@azure-rest/ai-inference": "^1.0.0-beta.6"
+    "@anthropic-ai/sdk": "^0.30.0",
+    "@azure-rest/ai-inference": "^1.0.0-beta.6",
+    "@azure/openai": "^1.0.0-beta.12",
+    "@google/generative-ai": "^0.2.1",
+    "@mistralai/mistralai": "^1.2.0",
+    "axios": "^1.6.8"
   }
 }

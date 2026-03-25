@@ -1,0 +1,9 @@
+name: 'Agentic AI - Gemini'
+description: 'Runs Gemini Prompt'
+inputs:
+  prompt: { required: true, description: 'Prompt' }
+  api_key: { required: true, description: 'API Key' }
+  model: { required: true, description: 'Model' }
+runs:
+  using: 'node20'
+  main: '../src/gemeni.js'

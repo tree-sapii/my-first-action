@@ -1,0 +1,8 @@
+name: 'Agentic AI - Axios (MLX)'
+description: 'Runs Custom Axios Prompt'
+inputs:
+  prompt: { required: true, description: 'Prompt' }
+  endpoint: { required: false, description: 'Base URL' }
+runs:
+  using: 'node20'
+  main: '../src/axios.js'

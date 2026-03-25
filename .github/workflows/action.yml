@@ -1,8 +1,7 @@
 name: Mock AI Actions Workflow
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch: 
 
 jobs:
   test-ai-providers:

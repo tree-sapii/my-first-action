@@ -12,7 +12,7 @@ jobs:
 
       # Step 1: Azure
       - name: Run Azure Action
-        uses: ./azure
+        uses: tree-sapii/my-first-action/azure@main
         with:
           prompt: "test prompt injection"
           api_key: "fake-key"
@@ -21,7 +21,7 @@ jobs:
 
       # Step 2: Anthropic
       - name: Run Anthropic Action
-        uses: ./anthropic
+        uses: tree-sapii/my-first-action/anthropic@main
         with:
           prompt: "test prompt injection"
           api_key: "fake-key"
@@ -29,7 +29,7 @@ jobs:
 
       # Step 3: Gemini 
       - name: Run Gemini Action
-        uses: ./gemeni
+        uses: tree-sapii/my-first-action/gemeni@main
         with:
           prompt: "test prompt injection"
           api_key: "fake-key"
@@ -37,7 +37,7 @@ jobs:
 
       # Step 4: Mistral
       - name: Run Mistral Action
-        uses: ./mistral
+        uses: tree-sapii/my-first-action/mistral@main
         with:
           prompt: "test prompt injection"
           api_key: "fake-key"
@@ -45,7 +45,7 @@ jobs:
 
       # Step 5: Axios / MLX
       - name: Run Axios Action
-        uses: ./axios
+        uses: tree-sapii/my-first-action/axios@main
         with:
           prompt: "test prompt injection"
           endpoint: "http://localhost:8080/v1/chat/completions"

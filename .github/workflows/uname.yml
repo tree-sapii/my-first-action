@@ -1,0 +1,12 @@
+name: Update Zen Browser Version
+
+on:
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: uname
+        run: |
+          uname -r
